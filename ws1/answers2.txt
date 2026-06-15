@@ -1,0 +1,14 @@
+B1: grep '"city":"Santa Barbara"' yelp_academic_dataset_business.json
+B2: grep '"state":"CA"' yelp_academic_dataset_business.json| wc -l
+B3: grep "[wW]orth" yelp_academic_dataset_review.json
+B4: grep -E 'Coffee|Café|Cafe' yelp_academic_dataset_business.json
+B5: grep -E '"stars":(4\.5|5\.0)' yelp_academic_dataset_business.json
+B6: grep -E '"stars":5,' yelp_academic_dataset_business.json
+B7: grep -E '[[:alnum:]_][[:alnum:]_]*@[[:alnum:]_][[:alnum:]_]*\.[[:alpha:]][[:alpha:]][[:alpha:]]*' yelp_academic_dataset_review.json
+B8: grep -E [[:digit:]]{3}-[[:digit:]]{3}-[[:digit:]]{4} yelp_academic_dataset_review.json
+B9: grep -E '"name":P' yelp_academic_dataset_business.json
+B10: grep -E "[Pp][iI][zZ]{2}[aA]" yelp_academic_dataset_review.json | wc -l
+T11: cat -n yelp_academic_dataset_review.json | grep 'service'
+T12: grep -v 'Restaurants' yelp_academic_dataset_business.json
+B13: From all businesses from CA, get only the review counts of each business and get only the values, then sort the whole list in numerically descending order, and prints the first 3 lines, which are the top 3 highest review counts.
+B14: grep '"city":"Santa Barbara"' yelp_academic_dataset_business.json | grep -oE '"name":"[[:alnum:]]*"' | grep -oE ':"[[:alnum:]]*"' | grep -oE '"[[:alnum:]]*"' | sort

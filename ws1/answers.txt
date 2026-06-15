@@ -1,0 +1,14 @@
+T1: cd ~/cs131/ws1
+T2: ls ../data
+T3: file logs/app01.log .env
+T4: ls -alhr
+T5: ls -Sl
+T6: 1048576 bytes, ishigaki-cs24, Jun 8 10:44
+T7: ls Data?.csv
+T8: ls [[:upper:]]*
+T9: ls BACKUP.[0-9][0-9][0-9]
+T10: cp data/* backup
+T11: mv data/readme.txt data/README.md
+T12: rm -ri data
+T13: git init && git add answers.txt && git commit -m linux basics challenge
+T14: git clone https://github.com/nouvelineaimy-school/cs131
