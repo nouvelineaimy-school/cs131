@@ -4,11 +4,13 @@ Q2: git log --oneline -3
 Q3: git log --oneline -1 (got d16d62b)
 Q4: git revert d16d62b
 Q5: git rm --cached bigdata.bin
-echo bigdata.bin .gitignore
-git commit --amend -m updated gitignore
-git push
+echo "bigdata.bin" >> .gitignore
+git commit --amend -m "updated gitignore"
+ git push
 Q6: git switch -c feature-summary
-touch summary.md && git add summary.md && git commit -m added summary.md
+touch summary.md
+git add summary.md
+git commit -m "added summary.md"
 Q8: git diff main...HEAD
 Q9: git checkout main
 git merge feature-summary
@@ -19,3 +21,8 @@ CONFLICT (content): Merge conflict in ws2/summary.md
 Automatic merge failed; fix conflicts and then commit the result.
 Q12: git status
 Q13: vim summary.md
+Q14: git add summary.md
+git commit -m "fixing conflict"
+Q15: git fetch origin
+git log HEAD..origin/main --oneline
+Q16: git fetch doesn't merge changes into the working branch, but git pull does
