@@ -1,0 +1,15 @@
+Q1:git add notes.md
+git commit -m "ws2: add task line"
+Q2: git log --oneline -3
+Q3: git log --oneline -1 (got d16d62b)
+Q4: git revert d16d62b
+Q5: git rm --cached bigdata.bin
+echo bigdata.bin .gitignore
+git commit --amend -m updated gitignore
+git push
+Q6: git switch -c feature-summary
+touch summary.md && git add summary.md && git commit -m added summary.md
+Q8: git diff main...HEAD
+Q9: git checkout main
+git merge feature-summary
+Q10: git branch -d feature-summary
