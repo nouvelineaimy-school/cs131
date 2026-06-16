@@ -1,0 +1,3 @@
+Q1: git add notes.md
+git commit -m ws2: add task line
+Q2: git log --oneline -3
