@@ -13,3 +13,9 @@ Q8: git diff main...HEAD
 Q9: git checkout main
 git merge feature-summary
 Q10: git branch -d feature-summary
+Q11: git merge conflict-branch
+Auto-merging ws2/summary.md
+CONFLICT (content): Merge conflict in ws2/summary.md
+Automatic merge failed; fix conflicts and then commit the result.
+Q12: git status
+Q13: vim summary.md
