@@ -1,0 +1,18 @@
+A1: ls -l > listing.txt
+date >> listing.txt
+A2: ls /nonexistent_dir 2> errors.txt
+A3: ls /nonexistent_dir /etc 1>> output.txt 2>> errors.txt
+A4: ls /nonexistent_dir /etc &> combined.txt
+A5: /dev/null is a device file and anything you send there disappear. The standard output of ls /etc appears but ls /nonexistent_dir is gone.
+A6: sort fruits.txt | uniq
+A7: sort fruits.txt | uniq -c | sort -nr
+A8: grep ERROR server.log | wc -l
+A9: grep '^ERROR' server.log >> errors_only.txt
+A10: grep -oE '^[A-Z]+' server.log | sort | uniq -c | sort -nr
+A11: grep -oE '"state":"[^"]+"' /data/yelp/yelp_academic_dataset_business.json | sort | uniq -c | sort -nr | head -5
+B1: uid=1057(ishigaki-cs24) gid=1057(ishigaki-cs24) groups=1057(ishigaki-cs24). uid is user ID and gid is group ID
+B2: -rw-rw-r--. 1st is owner, 2nd is group, and 3rd is world. Owner and group can read and write but world can only read.
+B3: Assigns -rw-rw-r-- permissions by default.
+B4: chmod 000 secret.txt
+chmod 640 secret.txt
+B6: find . -type f -user ishigaki-cs24 -perm -u=w
