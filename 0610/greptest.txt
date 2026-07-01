@@ -1,0 +1,8 @@
+emo:happy
+emo:sad
+emo:happy
+emo:sad
+emo:haha
+emo:happy
+emo:angry
+emo:scared
