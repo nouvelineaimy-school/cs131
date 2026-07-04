@@ -15,4 +15,17 @@ Takes two inputs. If the 2nd input is an existing directory, then the 1st input'
 Then we move to the diretory of the 2nd input.
 Otherwise, if the 2nd input doesn't exist, it just renames the 1st input to the 2nd and doesn't move anywhere.
 
+https://github.com/nouvelineaimy-school/cs131/blob/695468c29e8a94c453d05172aee6c892e6a98967/ws4/.bashrc#L1
 
+counting()
+Takes an integer input greater than 0. If so, it prints numbers from 1 to the given input.
+
+https://github.com/nouvelineaimy-school/cs131/blob/695468c29e8a94c453d05172aee6c892e6a98967/ws4/.bashrc#L3
+
+if [ "$1" -le 0 ];
+Executes a statement if the value of the 1st input is less than or equal to 0.
+
+https://github.com/nouvelineaimy-school/cs131/blob/695468c29e8a94c453d05172aee6c892e6a98967/ws4/.bashrc#L16
+
+alias 360='chmod 360'
+An alias for 'chmod' which changes the file permissions to --wxrw----
