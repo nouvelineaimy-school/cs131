@@ -1,0 +1,18 @@
+https://gist.github.com/zachbrowne/8bc414c9f30192067831fafebd14255c#file-the-ultimate-bad-ass-bashrc-file-L329
+
+up()
+Creates a local variable d that is initialized as an empty string.
+The first input value is assigned to variable limit.
+d will contain a path. For limit number of times, d will go up a parent directory.
+Then, the first instance of / in d is removed.
+If d is empty, then it will be assigned "..". Meaning it'll go up one parent by default.
+Then, changes directory to whatever path is in d.
+
+https://gist.github.com/zachbrowne/8bc414c9f30192067831fafebd14255c#file-the-ultimate-bad-ass-bashrc-file-L311
+
+mvg()
+Takes two inputs. If the 2nd input is an existing directory, then the 1st input's contents are moved to the 2nd.
+Then we move to the diretory of the 2nd input.
+Otherwise, if the 2nd input doesn't exist, it just renames the 1st input to the 2nd and doesn't move anywhere.
+
+
