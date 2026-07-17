@@ -1,0 +1,82 @@
+The coefficient is 0.1, which is a positive number. So tip rises 0.1 times for every dollar of total_bill.
+
+Batch [15ad124694464ad9a1b9d4f5277873a7] submitted.
+WARNING: No runtime version specified. Using the default runtime version. It is recommended to select a specific major.minor runtime version in production, as the default runtime version may change at any time.
+Using the default container image
+Waiting for container log creation
+PYSPARK_PYTHON=/opt/dataproc/conda/bin/python
+Generating /home/spark/.pip/pip.conf
+Configuring index-url as 'https://us-python.pkg.dev/artifact-registry-python-cache/virtual-python/simple/'
+JAVA_HOME=/usr/lib/jvm/temurin-17-jdk-amd64
+SPARK_EXTRA_CLASSPATH=
+:: loading settings :: file = /etc/spark/conf/ivysettings.xml
+26/07/17 05:09:20 WARN MetricsConfig: Cannot locate configuration: tried hadoop-metrics2-google-hadoop-file-system.properties,hadoop-metrics2.properties
+26/07/17 05:09:20 INFO MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+26/07/17 05:09:20 INFO MetricsSystemImpl: google-hadoop-file-system metrics system started
++----------+----+------+------+---+------+----+
+|total_bill| tip|   sex|smoker|day|  time|size|
++----------+----+------+------+---+------+----+
+|     16.99|1.01|Female|    No|Sun|Dinner|   2|
+|     10.34|1.66|  Male|    No|Sun|Dinner|   3|
+|     21.01| 3.5|  Male|    No|Sun|Dinner|   3|
+|     23.68|3.31|  Male|    No|Sun|Dinner|   2|
+|     24.59|3.61|Female|    No|Sun|Dinner|   4|
+|     25.29|4.71|  Male|    No|Sun|Dinner|   4|
+|      8.77| 2.0|  Male|    No|Sun|Dinner|   2|
+|     26.88|3.12|  Male|    No|Sun|Dinner|   4|
+|     15.04|1.96|  Male|    No|Sun|Dinner|   2|
+|     14.78|3.23|  Male|    No|Sun|Dinner|   2|
+|     10.27|1.71|  Male|    No|Sun|Dinner|   2|
+|     35.26| 5.0|Female|    No|Sun|Dinner|   4|
+|     15.42|1.57|  Male|    No|Sun|Dinner|   2|
+|     18.43| 3.0|  Male|    No|Sun|Dinner|   4|
+|     14.83|3.02|Female|    No|Sun|Dinner|   2|
+|     21.58|3.92|  Male|    No|Sun|Dinner|   2|
+|     10.33|1.67|Female|    No|Sun|Dinner|   3|
+|     16.29|3.71|  Male|    No|Sun|Dinner|   3|
+|     16.97| 3.5|Female|    No|Sun|Dinner|   3|
+|     20.65|3.35|  Male|    No|Sat|Dinner|   3|
++----------+----+------+------+---+------+----+
+only showing top 20 rows
+
+26/07/17 05:09:39 WARN Instrumentation: [aa3393ec] regParam is zero, which might cause numerical instability and overfitting.
+26/07/17 05:09:42 WARN InstanceBuilder: Failed to load implementation from:dev.ludovic.netlib.blas.VectorBLAS
+26/07/17 05:09:44 WARN Instrumentation: [c087d52f] regParam is zero, which might cause numerical instability and overfitting.
++----------+----+------+------+----+------+----+-----------+------------------+
+|total_bill| tip|   sex|smoker| day|  time|size|   features|        prediction|
++----------+----+------+------+----+------+----+-----------+------------------+
+|      7.25| 1.0|Female|    No| Sat|Dinner|   1| [7.25,1.0]|1.6930508587825712|
+|      7.74|1.44|  Male|   Yes| Sat|Dinner|   2| [7.74,2.0]| 1.803907291753227|
+|      8.77| 2.0|  Male|    No| Sun|Dinner|   2| [8.77,2.0]|1.9037142554070823|
+|      9.55|1.45|  Male|    No| Sat|Dinner|   2| [9.55,2.0]|1.9792962278828177|
+|       9.6| 4.0|Female|   Yes| Sun|Dinner|   2|  [9.6,2.0]|1.9841412261184415|
+|     10.07|1.83|Female|    No|Thur| Lunch|   1|[10.07,1.0]|1.9663087592717674|
+|     10.09| 2.0|Female|   Yes| Fri| Lunch|   2|[10.09,2.0]| 2.031622208827557|
+|     10.34|1.66|  Male|    No| Sun|Dinner|   3|[10.34,3.0]|2.1192226502672176|
+|     10.51|1.25|  Male|    No| Sat|Dinner|   2|[10.51,2.0]|2.0723201940067995|
+|     11.17| 1.5|Female|    No|Thur| Lunch|   2|[11.17,2.0]|2.1362741707170367|
++----------+----+------+------+----+------+----+-----------+------------------+
+only showing top 10 rows
+
+Coefficients: 0.1
+Intercept: 0.93
+RMSE: 1.0459270801074942
+R2: 0.5464431073420253
+Batch [15ad124694464ad9a1b9d4f5277873a7] finished.
+metadata:
+  '@type': type.googleapis.com/google.cloud.dataproc.v1.BatchOperationMetadata
+  batch: projects/studied-union-499516-q1/locations/us-central1/batches/15ad124694464ad9a1b9d4f5277873a7
+  batchUuid: 29a82016-0995-47ec-9fd8-cb6e4b582fa5
+  createTime: '2026-07-17T05:08:07.270520Z'
+  description: Batch
+  labels:
+    goog-dataproc-batch-id: 15ad124694464ad9a1b9d4f5277873a7
+    goog-dataproc-batch-uuid: 29a82016-0995-47ec-9fd8-cb6e4b582fa5
+    goog-dataproc-drz-resource-uuid: batch-29a82016-0995-47ec-9fd8-cb6e4b582fa5
+    goog-dataproc-location: us-central1
+  operationType: BATCH
+  warnings:
+  - No runtime version specified. Using the default runtime version. It is recommended
+    to select a specific major.minor runtime version in production, as the default
+    runtime version may change at any time.
+name: projects/studied-union-499516-q1/regions/us-central1/operations/cd06529b-7cb4-3693-b0b3-8821b7c8465d
